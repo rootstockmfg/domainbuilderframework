@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "sfdx-source/dbf-domainbuilder",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "46.0"
+}

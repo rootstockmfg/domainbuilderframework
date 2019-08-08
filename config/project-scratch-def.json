@@ -1,0 +1,10 @@
+{
+  "orgName": "Domain Builder Framework",
+  "edition": "Developer",
+  "features": ["DebugApex"],
+  "settings": {
+    "orgPreferenceSettings": {
+      "s1DesktopEnabled": true
+    }
+  }
+}

@@ -1,0 +1,13 @@
+# Code Owners file
+#
+# Reference GitHub CODEOWNERS documentation here -- https://help.github.com/en/articles/about-code-owners
+#
+# Repository Global Owners
+* @ImJohnMDaniel @TheRickParker
+
+
+CODEOWNERS @TheRickParker
+Jenkinsfile @ImJohnMDaniel
+sfdx-project.json @ImJohnMDaniel
+
+/sfdx-source/dbf-domainbuilder/ @TheRickParker
