@@ -1,3 +1,11 @@
+Re-architecture & expansion of the original DomainBuilder by Robert Sosemann (https://twitter.com/rsoesemann):<br>
+https://github.com/rsoesemann/apex-domainbuilder
+
+Depends upon the following public repositories:<br>
+https://github.com/financialforcedev/fflib-apex-common<br>
+https://github.com/financialforcedev/fflib-apex-mocks
+
+
 # Apex / DX Domain Builder
 
 Framework for constructing data, covering multiple use-cases of varying complexity. At their core, Domain Builders function as a mixture of Data Factory and Object Mother, depending upon implementation style and technique. Implementations can range from a simple Domain Builder per SObject providing internal Data Factory / Mother methods to complex, story-driven implementations which separate data concerns from business concerns and span the managed package boundary. The complexity of your use-case can dictate how involved your implementation needs to be. It is recommended that your approach err on the side of simplicity, only gaining the more complex features when necessary.
