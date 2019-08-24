@@ -5,6 +5,21 @@ Depends upon the following public repositories:<br>
 https://github.com/financialforcedev/fflib-apex-common<br>
 https://github.com/financialforcedev/fflib-apex-mocks
 
+# Setup
+Install Shane's SFDX plugin
+* sfdx plugins:install shane-sfdx-plugins
+
+Setup teh scratch org
+* sfdx force:org:create -a dbf -f config/project-scratch-def.json 
+
+Install the fflib-apex-mocks project
+* sfdx shane:github:src:install -g financialforcedev -r fflib-apex-mocks -u dbf
+
+Install the fflib-apex-commons project
+* sfdx shane:github:src:install -g financialforcedev -r fflib-apex-common -p fflib/src -u dbf
+
+Push the DomainBuilderFramework source code to the scratch org
+* sfdx force:source:push -u dbf
 
 # Apex / DX Domain Builder
 

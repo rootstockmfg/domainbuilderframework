@@ -37,16 +37,16 @@
  *       ~ When persist() or mock() is eventually executed on the stack of builders, the ae__EmailAccountBuilder is executed and the underlying SObject rescued
  *         and pulled into your local builder, to maintain a single transaction and a single unit of work
  */
-public with sharing abstract class dbf_IDomainBuilderWrapper extends dbf_DomainBuilder implements dbf_IDomainBuilderReclaimableWrapper {
+public with sharing abstract class dbf_DomainBuilderWrapper extends dbf_DomainBuilder implements dbf_IDomainBuilderReclaimableWrapper {
 
     // REGION: CONSTRUCTORS
 
-    public dbf_IDomainBuilderWrapper(SObjectType type, Boolean isSetupObject) {
+    public dbf_DomainBuilderWrapper(SObjectType type, Boolean isSetupObject) {
         super(type, isSetupObject);
         super.forExternal(this);
     }
 
-    public dbf_IDomainBuilderWrapper(SObjectType type) {
+    public dbf_DomainBuilderWrapper(SObjectType type) {
         super(type);
         super.forExternal(this);
     }

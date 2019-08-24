@@ -290,22 +290,22 @@ public inherited sharing virtual class dbf_DomainBuilderStory {
         }
 
         /*
-         *  detects if the builder is an instance of dbf_IDomainBuilderWrapper to accurately call setParent()
+         *  detects if the builder is an instance of dbf_DomainBuilderWrapper to accurately call setParent()
          */
         private void assignParent(dbf_IDomainBuilder child, SObjectField field, dbf_IDomainBuilder parent) {
-            if (child instanceOf dbf_IDomainBuilderWrapper) {
-                ((dbf_IDomainBuilderWrapper)child).setParent(field, parent);
+            if (child instanceOf dbf_DomainBuilderWrapper) {
+                ((dbf_DomainBuilderWrapper)child).setParent(field, parent);
             } else {
                 child.setParent(field, parent);
             }
         }
 
         /*
-         *  detects if the builder is an instance of dbf_IDomainBuilderWrapper to accurately call setReference()
+         *  detects if the builder is an instance of dbf_DomainBuilderWrapper to accurately call setReference()
          */
         private void assignReference(dbf_IDomainBuilder target, SObjectField relatedToField, SObjectField targetExternalIdField, Object externalIdTarget) {
-            if (target instanceOf dbf_IDomainBuilderWrapper) {
-                ((dbf_IDomainBuilderWrapper)target).setReference(relatedToField, targetExternalIdField, externalIdTarget);
+            if (target instanceOf dbf_DomainBuilderWrapper) {
+                ((dbf_DomainBuilderWrapper)target).setReference(relatedToField, targetExternalIdField, externalIdTarget);
             } else {
                 target.setReference(relatedToField, targetExternalIdField, externalIdTarget);
             }
