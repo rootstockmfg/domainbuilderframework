@@ -2,6 +2,10 @@
   "packageDirectories": [
     {
       "path": "sfdx-source/dbf-domainbuilder",
+      "default": false
+    },
+    {
+      "path": "sfdx-source/unpackaged-fflib-apex-common",
       "default": true
     }
   ],
