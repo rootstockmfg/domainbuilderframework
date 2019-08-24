@@ -1,4 +1,3 @@
-// working copy
 /*
 * FinancialForce.com, inc. claims copyright in this software, its screen
 * display designs and supporting documentation. FinancialForce and
