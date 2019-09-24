@@ -9,7 +9,7 @@ https://github.com/financialforcedev/fflib-apex-mocks
 Install Shane's SFDX plugin
 * sfdx plugins:install shane-sfdx-plugins
 
-Setup teh scratch org
+Setup the scratch org
 * sfdx force:org:create -a dbf -f config/project-scratch-def.json 
 
 Install the fflib-apex-mocks project
